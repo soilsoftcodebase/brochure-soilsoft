@@ -1,6 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { logError } from "./logger";
 
 const app = express();
 app.use(express.json());
@@ -43,6 +44,7 @@ app.use((req, res, next) => {
     const status = err.status || err.statusCode || 500;
     const message = err.message || "Internal Server Error";
 
+    logError(`Error: ${message}`, err);
     res.status(status).json({ message });
     throw err;
   });
@@ -53,15 +55,20 @@ app.use((req, res, next) => {
   if (app.get("env") === "development") {
     await setupVite(app, server);
   } else {
+    // For production environment (Vercel)
+    console.log('Running in production mode');
     serveStatic(app);
   }
 
   // Use PORT environment variable for Vercel or default to 5000
   const port = process.env.PORT || 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-  }, () => {
-    log(`serving on port ${port}`);
-  });
+  // Only start server if not in serverless environment (Vercel)
+  if (!process.env.VERCEL) {
+    server.listen({
+      port,
+      host: "0.0.0.0",
+    }, () => {
+      log(`serving on port ${port}`);
+    });
+  }
 })();

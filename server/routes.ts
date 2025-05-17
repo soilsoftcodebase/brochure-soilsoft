@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import express from "express";
 import path from "path";
+import { logInfo, logRequest, logError } from "./logger";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Serve the static assets for Font Awesome
@@ -15,15 +16,23 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // API route to get company information
   app.get("/api/company", (req, res) => {
-    res.json({
-      name: "Soil Soft Technologies Pvt. Ltd.",
-      tagline: "Smart Tech. Local Roots. Global Reach.",
-      founded: "Jan 22, 2024",
-      location: "Ponnur, Guntur District, Andhra Pradesh",
-      website: "www.soilsoft.ai",
-      team: "10 Full-Time Employees (All from AP)",
-      interns: "30+ | Currently Active: 5+"
-    });
+    logRequest(req, res, "Getting company info");
+    try {
+      const data = {
+        name: "Soil Soft Technologies Pvt. Ltd.",
+        tagline: "Smart Tech. Local Roots. Global Reach.",
+        founded: "Jan 22, 2024",
+        location: "Ponnur, Guntur District, Andhra Pradesh",
+        website: "www.soilsoft.ai",
+        team: "10 Full-Time Employees (All from AP)",
+        interns: "30+ | Currently Active: 5+"
+      };
+      logInfo("Sending company data: " + JSON.stringify(data).substring(0, 50) + "...");
+      res.json(data);
+    } catch (error) {
+      logError("Error in /api/company endpoint", error);
+      res.status(500).json({ error: "Internal server error" });
+    }
   });
 
   // API route to get product information

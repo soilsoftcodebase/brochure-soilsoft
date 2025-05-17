@@ -1,0 +1,138 @@
+Create a modern, professional, PDF-print-friendly 4-page website (not interactive) for Soil Soft Technologies Pvt. Ltd., a fast-growing tech startup based in Ponnur, Andhra Pradesh, India. This is for an investment presentation, so design must be clean, colorful, and impressive like a startup pitch deck.
+
+🖋️ Use minimal text, infographics, icons, and visuals (timelines, roadmap, bar graphs).
+
+🎨 Colors:
+
+Background: White
+
+Primary: Navy Blue (#0A2342)
+
+Accent: Forest Green (#2E8B57)
+
+Support: Sky Blue (#A6E3E9), Soft Grey (#F5F5F5)
+
+Fonts: Poppins / Inter / Montserrat
+
+🚫 Avoid interactive buttons (no “click here” or “try now”) – must be printable as PDF.
+
+👨‍💼 Target Audience: An MP & Investor with multiple companies – this should reflect innovation, impact, and growth potential.
+
+📄 Page 1: COMPANY PROFILE & MILESTONES
+Header
+Logo (top-left)
+
+Tagline: “Smart Tech. Local Roots. Global Reach.”
+
+Startup Badges Row:
+✅ Startup India | ✅ MSME Registered | ✅ Trademark Registered
+🔄 DPIIT In Progress | 🧠 Patent Filing in Progress
+
+About Section (icon layout)
+🗓️ Founded: Jan 22, 2024 (Ram Janmabhoomi Day)
+
+📍 Location: Ponnur, Guntur District, Andhra Pradesh
+
+🌐 Website: www.soilsoft.ai
+
+👨‍💻 Core Team: 10 Full-Time Employees (All from AP)
+
+🎓 Interns Trained: 30+ | Currently Active: 5+
+
+Timeline Milestones (horizontal timeline with icons):
+🛠️ Jan 2024 – Company Registered
+
+🧪 Mar–Aug – Completed Angular Trading Testing Project
+
+🚀 Sep 2024 – Released APIGen BETA
+
+🏗️ Oct 2024 – Started ERP Project for Manpower Supply Firm
+
+💼 Nov 2024 – Partnered with CMRS (Pune) for SAAS for CA Firms
+
+📄 Page 2: FLAGSHIP PRODUCT – APIGEN
+Top Banner:
+Logo + Tagline:
+APIGen – Next-Gen API Testing Platform
+AI-powered, enterprise-grade, saves 60% of QA cost
+
+Problem → Solution Grid (icons)
+🔴 Problem	✅ Our Solution
+Multiple tools for testing	One unified platform
+Expensive QA process	Saves 60% with automation
+No AI-driven test planning	Built-in AI for test coverage
+Security & Performance not combined	Full-stack coverage in one place
+
+Market Snapshot (bar graph)
+Global API Economy: $1.8T
+
+Testing Tools Market: $2B by 2026
+
+Growth: 20% YoY (dev demand rising)
+
+Revenue Model (icon blocks)
+SaaS Subscription
+
+Cloud Enterprise Licensing
+
+Custom Deployment Options
+
+📄 Page 3: FUTURE PRODUCTS – DIVERSIFIED TECH PORTFOLIO
+Grid Layout (4 boxes with icons & titles):
+🏠 HomeTown – Local Super App
+All-in-one platform for food, services, event bookings, and local shopping.
+💡 Subscription model for local vendors
+📍 Focus: Tier 2 & 3 cities
+
+📚 Knowledge Quest – EdTech OTT
+Affordable research-based learning from STEM to higher education.
+📈 ₹3,000/year | 🧑‍🎓 Target: Students from semi-urban & rural India
+
+👕 StyleWear – Fashion Tech
+AI-powered app for personalized style suggestions, wardrobe planner, and eCom integration.
+🛍️ Freemium + commission-based revenue
+
+📸 Photogenic – India’s Largest Photography Platform
+Not an editor – a service aggregator like Swiggy for photographers + editors.
+🎯 Vision: 1,000+ creative professionals under one digital brand
+📷 Book weddings, events, editor packages on-demand
+💸 Monetization: Commission on bookings + premium features
+
+📄 Page 4: BUSINESS MODEL + INVESTMENT APPEAL
+Revenue Forecast (bar chart)
+Product	2024 ₹	2025 ₹	2026 ₹
+APIGen	5L	30L	1.2Cr
+HomeTown	0	15L	60L
+Knowledge Quest	0	5L	40L
+Photogenic	0	8L	50L
+
+Total 2026 Goal: ₹2.7 Cr 💰
+
+Monetization Summary (color-coded icons)
+APIGen → Enterprise SaaS
+
+HomeTown → Vendor Subscription
+
+Knowledge Quest → Direct Fee
+
+Photogenic → Commission + Feature Packs
+
+StyleWear → Freemium + Affiliate Sales
+
+Use of Funds (pie chart)
+40% – Product Development
+
+30% – Marketing & Branding
+
+20% – Infra & Scalability
+
+10% – Operations & Compliance
+
+Investment Ask (highlighted box):
+💸 Seeking Investment of ₹1.5 Crore
+To accelerate growth, build hiring pipeline, complete flagship products, and dominate Tier 2 tech services.
+
+📍Contact:
+📞 +91 79899 79264
+✉️ connect@soilsoft.ai
+🌐 www.soilsoft.ai

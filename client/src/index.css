@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@page {
+  size: A4 portrait;
+  margin: 10mm;
+}
+
+/* Alternative legal size */
+@page legal {
+  size: legal portrait;
+  margin: 10mm;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: white !important;
+  }
+  
+  .page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    padding: 10mm !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+  }
+  
+  .size-legal {
+    page: legal;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+}
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --primary: 221 83% 15%;  /* Navy Blue */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --accent: 153 49% 36%;  /* Forest Green */
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 215 20.2% 65.1%;
+  --radius: 0.5rem;
+  
+  /* Custom colors */
+  --navy: 221 83% 15%;
+  --forest: 153 49% 36%;
+  --sky: 186 66% 80%;
+  --softgrey: 0 0% 96%;
+  
+  /* Chart colors */
+  --chart-1: 221 83% 15%;
+  --chart-2: 153 49% 36%;
+  --chart-3: 186 66% 80%;
+  --chart-4: 0 0% 90%;
+  --chart-5: 0 0% 70%;
+}
+
+.dark {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+  --muted: 223 47% 11%;
+  --muted-foreground: 215.4 16.3% 56.9%;
+  --popover: 224 71% 4%;
+  --popover-foreground: 215 20.2% 65.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --border: 216 34% 17%;
+  --input: 216 34% 17%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 1.2%;
+  --secondary: 222.2 47.4% 11.2%;
+  --secondary-foreground: 210 40% 98%;
+  --accent: 216 34% 17%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 216 34% 17%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .subtitle, .stat-title {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* Custom classes */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 25px;
+  width: 30px;
+  height: 2px;
+  background-color: #2E8B57;
+}
+
+.bg-navy {
+  background-color: #0A2342;
+}
+
+.bg-forest {
+  background-color: #2E8B57;
+}
+
+.bg-sky {
+  background-color: #A6E3E9;
+}
+
+.bg-softgrey {
+  background-color: #F5F5F5;
+}
+
+.text-navy {
+  color: #0A2342;
+}
+
+.text-forest {
+  color: #2E8B57;
+}
+
+.text-sky {
+  color: #A6E3E9;
+}
+
+.border-navy {
+  border-color: #0A2342;
+}
+
+.border-forest {
+  border-color: #2E8B57;
+}
+
+.border-sky {
+  border-color: #A6E3E9;
+}
